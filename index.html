@@ -13,13 +13,13 @@
     <body>
         
         <a-scene embedded arjs webxr="optionalFeatures:  hit-test;" ar-hit-test="target:#spider;">                
-
-            <a-entity position="0 80 300">                    
-                <a-camera></a-camera>                             
-            </a-entity >              
-            
-            <a-entity scale ="1 1 1" position="0 0 0" animation-mixer fbx-model="src: url(/models/spidy.fbx);"></a-entity>       
-                       
+            <a-marker preset="hiro">
+                <a-entity position="0 80 300">                    
+                    <a-camera></a-camera>                             
+                </a-entity >              
+                
+                <a-entity scale ="1 1 1" position="0 0 0" animation-mixer fbx-model="src: url(/models/spidy.fbx);"></a-entity>       
+            </a-marker>
         </a-scene>
 
         
